@@ -1,0 +1,84 @@
+body{
+
+}
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position:  100% 0; }
+}
+.bkgrnd1{
+	background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpaper-1.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd2{
+	background-image:url(http://www.hdwallsource.com/img/2015/6/stunning-space-wallpaper-45214-46411-hd-wallpapers.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd3{
+	background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-2.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd4{
+	background-image:url(http://images6.fanpop.com/image/photos/32800000/space-wallpaper-space-32897723-1920-1080.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd5{
+	background-image:url(https://newevolutiondesigns.com/images/freebies/space-wallpaper-5.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+
+#board{
+	top: 150px;
+	text-align: center;
+	background-color: rgba(90, 90, 90, .55);
+	position: center;
+	border-radius: 10px 10px 10px 10px;
+	height:280px;
+}
+
+.page-header{
+	color:rgba(10, 10, 10, .9);
+	font-family:Bowlby One;
+}
+
+#question{
+	margin-top: 30px;
+	color:rgba(10, 10, 10, .8);
+	font-family: Comfortaa;
+}
+
+.answers{
+	position:center;
+	display: none;
+}
+#answers .btn{
+	width:30% ;
+}
+#startbtn{
+	margin-top: 20px;
+}
+
+.btn{
+	margin-top: 50px;
+	width:50% ;
+	background-color: rgba(100, 100, 100, .5);
+	font-family: unica one;
+	color: white;
+}
+.progress{
+	opacity:.6;
+	position: center;
+	display:none;
+	margin-top: 25px;
+	margin-left:20.1%;
+	width:60%;
+}
