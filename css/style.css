@@ -53,6 +53,10 @@ body{
 #question{
 	margin-top: 30px;
 	margin-bottom: -10px;
+	color:black;
+	font-family: Comfortaa;
+}
+#textDisplay{
 	color:rgba(10, 10, 10, .8);
 	font-family: Comfortaa;
 }
@@ -64,14 +68,16 @@ body{
 #answers .btn{
 	display:block;
 	margin-left:20%;
-	width:35% ;
+	width:25% ;
+	margin-top: 7.5%;
 }
 #startbtn{
-	margin-top: 20px;
+	margin-top: 6%;
 }
-
+#answers .answers{
+	height:90%;
+}
 .btn{
-	margin-top: 50px;
 	width:50% ;
 	background-color: rgba(100, 100, 100, .5);
 	font-family: unica one;
@@ -79,9 +85,32 @@ body{
 }
 .progress{
 	opacity:.6;
-	position:center;
+	position:absolute;
 	display:none;
-	margin-bottom:10px;
-	margin-left:35%;
-	width:30%;
+	bottom:-12px;
+	margin-left:18%;
+	width:60%;
+}
+.progress-bar{
+	width: 0%;
+}
+#dipdiv{
+	display:none;
+	margin-top:28%;
+}
+.endImg{
+	opacity:.8;
+	max-width:300px;
+	max-height:200px;
+}
+#postbtns{
+	opacity:.9;
+	position:absolute;
+	display:none;
+	bottom:70px;
+	margin-left:18%;
+	dip
+}
+label{
+	color:rgba(0, 0, 0, 1);
 }
