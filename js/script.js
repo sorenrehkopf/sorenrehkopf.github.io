@@ -2,7 +2,7 @@ $(function(){
 
 var bkgrnd=Math.random();
 
-if(bkgrnd>=.8){
+if(bkgrnd>=.7){
 	$('body').addClass('bkgrnd1');
 // }else if(bkgrnd>=.6){
 // 	$('body').addClass('bkgrnd2');
@@ -14,28 +14,7 @@ if(bkgrnd>=.8){
 	$('body').addClass('bkgrnd5');
 }
 
-var qAndA=[
-{question:"What is your first name?", answers:[1,"Neil",2,"Narl",3,"Niall",4,"Nail",5,"Narwhal"]
-},{question:"When where you born?", answers:[2,"October 29th, 1964",4,"July 17th, 1934",1,"October 5th, 1958",3,"February 14th, 1959",5,"Today"]
-},{question:"Where did you go to College?", answers:[1,"Columbia",1,"Harvard",1,"U Texas Austin",4,"Yale",5,"None of the above"]
-},{question:"Which superhero comic book have you been featured in?", answers:[1,"Superman",4,"Spiderman",2,"Batman",5,"Omega Red",3,"Teen Titans"]
-},{question:"How many planets are in our solar system?", answers:[3,"At least 4.",5,"There's no way to know for sure.",1,"8",3,"9",5,"I hope you never have to find out."]
-},{question:"How many dwarf planets are in our solar system?", answers:[3,"13",2,"4",1,"5",4,"17",5,"The limit does not exist."]
-},{question:"How many moons does Jupiter have?", answers:[4,"17",3,"104",5,"Probably a few.",2,"45",1,"At least 62 that we know of."]
-},{question:"What is the moon made of?", answers:[5,"Ice and Fire.",5,"Plasma.",1,"Basalt and anorthosites.",1,"Tranquillityite, and pyroxferroite.",5,"Mostly Iron and Nickel."]
-},{question:"What are the largest objects in the Kuiper Belt?", answers:[2,"Haumea and Sedna",5,"Galifrey and Hoth",3,"Ceres and Makemake.",1,"Pluto and Eris.",4,"The Sun and the Moon."]
-},{question:"What is the closest galaxy to our own?", answers:[5,"Depeche Mode",1,"Andromeda",2,"Sextans B",3,"Aquarius Dwarf",5,"Bendidly Camberscwanch"]
-},{question:"Who discovered Venus?", answers:[5,"Me. I did.",3,"Galileo",2,"Clyde Tombaugh",4,"Neil Patrick Harris",1,"No one knows."]
-},{question:"Which star is closest to the earth.", answers:[1,"The Sun.",5,"Jennifer Lawrence",2,"Alpha Centauri",5,"Riachu",3,"Betelgeuse."]
-},{question:"Which star is closest to our own?", answers:[2,"Betelgeuse",3,"Procyon A",1,"Alpha Centauri",5,"The close star.",3,"Ganymede."]
-},{question:"How far does light travel in a year?", answers:[2,"3,878,499,810,000 miles.",2,"A light-year.",5,"A couple miles.",4,"As far as it can.",3,"79,469,830,705 miles."]
-},{question:"Beer or wine?", answers:[3,"Beer. Craft beer.",1,"Wine. Fine wine.",2,"Wine. Any wine.",4,"Alcohol",5,"PBR"]
-},{question:"Favorite award you have been given?", answers:[3,"1st Place 1975 NY State 800 Meter Dash.",4,"2007 Nobel Laureate",1,"Sexiest Astrophysicist Alive",2,"An Asteroid.",5,"Dr. Who Trivia Night 1st place."]
-},{question:"How fast does the Earth spin?", answers:[5,"7",4,"1400 Knots",3,"19,000 clicks.",1,"1000 MPH",4,"Mach 8.45"]
-},{question:"How many moons does Mars have?", answers:[1,"1",4,"6",5,"More than you could count!",2,"2",3,"0"]
-},{question:"Who discovered Neptune?", answers:[5,"Johan Sebastian Bach",1,"Johann Gottfried Galle",4,"Patrick Stewart",2,"William Herschel",3,"William Nye"]
-},{question:"Is there life elsewhere in the Universe?", answers:[4,"Shhhh it's a secret.",5,"No.",1,"Most likely yes.",3,"Who cares??",2,"Yes"]}
-];
+var qAndA=[{question:"What is your first name?", answers:[1,"Neil",2,"Narl",3,"Niall",4,"Nail",5,"Narwhal"]},{question:"When were you born?", answers:[2,"October 29th, 1964",4,"July 17th, 1934",1,"October 5th, 1958",3,"February 14th, 1959",5,"Today"]},{question:"Where did you go to College?", answers:[1,"Columbia",1,"Harvard",1,"U Texas Austin",4,"Yale",5,"None of the above"]},{question:"Which superhero comic book have you been featured in?", answers:[1,"Superman",4,"Spiderman",2,"Batman",5,"Omega Red",3,"Teen Titans"]},{question:"How many planets are in our solar system?", answers:[3,"At least 4.",5,"There's no way to know for sure.",1,"8",3,"9",5,"I hope you never have to find out."]},{question:"How many dwarf planets are in our solar system?", answers:[3,"13",2,"4",1,"5",4,"17",5,"The limit does not exist."]},{question:"How many moons does Jupiter have?", answers:[4,"17",3,"104",5,"Probably a few.",2,"45",1,"At least 62 that we know of."]},{question:"What is the moon made of?", answers:[5,"Ice and Fire.",5,"Plasma.",1,"Basalt and anorthosites.",1,"Tranquillityite, and pyroxferroite.",5,"Mostly Iron and Nickel."]},{question:"What are the largest objects in the Kuiper Belt?", answers:[2,"Haumea and Sedna",5,"Galifrey and Hoth",3,"Ceres and Makemake.",1,"Pluto and Eris.",4,"The Sun and the Moon."]},{question:"What is the closest galaxy to our own?", answers:[5,"Depeche Mode",1,"Andromeda",2,"Sextans B",3,"Aquarius Dwarf",5,"Bendidly Camberscwanch"]},{question:"Who discovered Venus?", answers:[5,"Me. I did.",3,"Galileo",2,"Clyde Tombaugh",4,"Neil Patrick Harris",1,"No one knows."]},{question:"Which star is closest to the earth.", answers:[1,"The Sun.",5,"Jennifer Lawrence",2,"Alpha Centauri",5,"Riachu",3,"Betelgeuse."]},{question:"Which star is closest to our own?", answers:[2,"Betelgeuse",3,"Procyon A",1,"Alpha Centauri",5,"The close star.",3,"Ganymede."]},{question:"How far does light travel in a year?", answers:[2,"3,878,499,810,000 miles.",2,"A light-year.",5,"A couple miles.",4,"As far as it can.",3,"79,469,830,705 miles."]},{question:"Beer or wine?", answers:[3,"Beer. Craft beer.",1,"Wine. Fine wine.",2,"Wine. Any wine.",4,"Alcohol",5,"PBR"]},{question:"Favorite award you have been given?", answers:[3,"1st Place 1975 NY State 800 Meter Dash.",4,"2007 Nobel Laureate",1,"Sexiest Astrophysicist Alive",2,"An Asteroid.",5,"Dr. Who Trivia Night 1st place."]},{question:"How fast does the Earth spin?", answers:[5,"7",4,"1400 Knots",3,"19,000 clicks.",1,"1000 MPH",4,"Mach 8.45"]},{question:"How many moons does Mars have?", answers:[1,"1",4,"6",5,"More than you could count!",2,"2",3,"0"]},{question:"Who discovered Neptune?", answers:[5,"Johan Sebastian Bach",1,"Johann Gottfried Galle",4,"Patrick Stewart",2,"William Herschel",3,"William Nye"]},{question:"Is there life elsewhere in the Universe?", answers:[4,"Shhhh it's a secret.",5,"No.",1,"Most likely yes.",3,"Who cares??",2,"Yes"]}];
 
 var playerScore=0;
 var qNum=0;
@@ -88,6 +67,7 @@ var playerRank=function(){
 $('#startbtn').on('click',function(e){
 	e.preventDefault();
 	playerScore=0;
+	clkys=0;
 	qText.text("Great! This simple quiz will help you find out!").delay(2200);
 	$('#startbtn').text('The world needs to know...').delay(1000);
 	$('#startbtn').fadeOut(2000);
@@ -103,14 +83,14 @@ $('#board').on('click','#answers .btn',function(){
 		playerScore+=Number($(this).attr('sc'));
 		prgsPcnt+=14.29;
 		prgs();
-		if(qNum<5){
+		if(qNum>5){
 		qText.fadeOut(500);
 		transOut($('#answers1'));
 		dSplay.html(playerRank());
 		dSplay.css('margin-top','5%');	
 		dSplay.delay(600).fadeIn(500);
 		$('#postbtns').delay(600).fadeIn(500);
-		$('#ldrboard').fadeIn(2000);
+		$('#ldrboard').fadeIn(2500);
 		}else{
 		dText.text(txtRfrsh());
 		transOut($('#answers1'));
@@ -122,6 +102,7 @@ $('#board').on('click','#answers .btn',function(){
 
 $('#rptbtn').on('click', function(e){
 	e.preventDefault();
+	clkys=0;
 	resps=["Hmmmm... interesting choice!","Neil?? Is that you??","Are you Neil?? Could you be him?","Your NDT count... It's off the charts!!","Hurry to the next question Neil!","The world cannot wait any longer. Please be NDT??","Space?? Science?? No, it's Neil deGrasse Tyson!","Oh, Mr. Tyson!!!","A telling reply...","Do you know what that means???"];
 	qAndA=[{question:"What is your first name?", answers:[1,"Neil",2,"Narl",3,"Niall",4,"Nail",5,"Narwhal"]},{question:"When where you born?", answers:[2,"October 29th, 1964",4,"July 17th, 1934",1,"October 5th, 1958",3,"February 14th, 1959",5,"Today"]},{question:"Where did you go to College?", answers:[1,"Columbia",1,"Harvard",1,"U Texas Austin",4,"Yale",5,"None of the above"]},{question:"Which superhero comic book have you been featured in?", answers:[1,"Superman",4,"Spiderman",2,"Batman",5,"Omega Red",3,"Teen Titans"]},{question:"How many planets are in our solar system?", answers:[3,"At least 4.",5,"There's no way to know for sure.",1,"8",3,"9",5,"I hope you never have to find out."]},{question:"How many dwarf planets are in our solar system?", answers:[3,"13",2,"4",1,"5",4,"17",5,"The limit does not exist."]},{question:"How many moons does Jupiter have?", answers:[4,"17",3,"104",5,"Probably a few.",2,"45",1,"At least 62 that we know of."]},{question:"What is the moon made of?", answers:[5,"Ice and Fire.",5,"Plasma.",1,"Basalt and anorthosites.",1,"Tranquillityite, and pyroxferroite.",5,"Mostly Iron and Nickel."]},{question:"What are the largest objects in the Kuiper Belt?", answers:[2,"Haumea and Sedna",5,"Galifrey and Hoth",3,"Ceres and Makemake.",1,"Pluto and Eris.",4,"The Sun and the Moon."]},{question:"What is the closest galaxy to our own?", answers:[5,"Depeche Mode",1,"Andromeda",2,"Sextans B",3,"Aquarius Dwarf",5,"Bendidly Camberscwanch"]},{question:"Who discovered Venus?", answers:[5,"Me. I did.",3,"Galileo",2,"Clyde Tombaugh",4,"Neil Patrick Harris",1,"No one knows."]},{question:"Which star is closest to the earth.", answers:[1,"The Sun.",5,"Jennifer Lawrence",2,"Alpha Centauri",5,"Riachu",3,"Betelgeuse."]},{question:"Which star is closest to our own?", answers:[2,"Betelgeuse",3,"Procyon A",1,"Alpha Centauri",5,"The close star.",3,"Ganymede."]},{question:"How far does light travel in a year?", answers:[2,"3,878,499,810,000 miles.",2,"A light-year.",5,"A couple miles.",4,"As far as it can.",3,"79,469,830,705 miles."]},{question:"Beer or wine?", answers:[3,"Beer. Craft beer.",1,"Wine. Fine wine.",2,"Wine. Any wine.",4,"Alcohol",5,"PBR"]},{question:"Favorite award you have been given?", answers:[3,"1st Place 1975 NY State 800 Meter Dash.",4,"2007 Nobel Laureate",1,"Sexiest Astrophysicist Alive",2,"An Asteroid.",5,"Dr. Who Trivia Night 1st place."]},{question:"How fast does the Earth spin?", answers:[5,"7",4,"1400 Knots",3,"19,000 clicks.",1,"1000 MPH",4,"Mach 8.45"]},{question:"How many moons does Mars have?", answers:[1,"1",4,"6",5,"More than you could count!",2,"2",3,"0"]},{question:"Who discovered Neptune?", answers:[5,"Johan Sebastian Bach",1,"Johann Gottfried Galle",4,"Patrick Stewart",2,"William Herschel",3,"William Nye"]},{question:"Is there life elsewhere in the Universe?", answers:[4,"Shhhh it's a secret.",5,"No.",1,"Most likely yes.",3,"Who cares??",2,"Yes"]}];
 	playerScore=0;
@@ -132,6 +113,7 @@ $('#rptbtn').on('click', function(e){
 	$('#postbtns').fadeOut(200);
 	setQ()
 	qText.fadeOut(0).delay(300);
+	$('#ldrboard').fadeOut(1500);
 	qText.fadeIn(300);
 	window.setTimeout(transIn,300,0);
 });
@@ -139,8 +121,10 @@ $('#rptbtn').on('click', function(e){
 $('#savebtn').on('click',function(){
 	var name=$('#name').val();
 	var pic=$('.endImg').attr('src');
-	if
-	$('#ldrboard').append("<div><img src='"+pic+"'><h6>"+name+"</h6><h6 id=ldrBrdScr>Score-"+playerScore+"</h6></div>");
+	if(!clkys){
+	$('#ldrboard').append("<div><img src="+pic+"><h6>"+name+" - Score-"+playerScore+"</h6></div>");
+	clkys++;
+	};
 });
 
 });

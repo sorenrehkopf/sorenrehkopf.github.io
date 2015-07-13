@@ -1,12 +1,10 @@
-body{
 
-}
-/*@keyframes animatedBackground {
+@keyframes animatedBackground {
 	from { background-position: 0 0; }
 	to { background-position:  100% 0; }
-}*/
+}
 .bkgrnd1{
-	background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpaper-1.jpg);
+	background-image:url(http://walldiskpaper.com/wp-content/uploads/2014/10/Space-Wallpaper-1920x1080.jpg);
 	background-position: 0px 0px;
 	background-size: 2500px 1080px;
 	animation: animatedBackground 150s linear infinite alternate;
@@ -80,7 +78,7 @@ body{
 }
 .btn{
 	width:50% ;
-	background-color: rgba(100, 100, 100, .5);
+	background-color: rgba(150, 150, 150, .7);
 	font-family: unica one;
 	color: white;
 }
@@ -109,14 +107,15 @@ body{
 	position:absolute;
 	text-align: left;
 	display:none;
-	bottom:70px;
-	margin-left:0%;
+	bottom:100px;
+	margin-left:31%;
 	width:100%;
 	
 }
 #postbtns .btn{
 	width:35%;
 	display:inline;
+	position:center;
 }
 label{
 	color:rgba(0, 0, 0, 1);
@@ -130,7 +129,7 @@ label{
 	height:110%;
 	float:right;
 	color:rgba(10, 10, 10, .9);
-	top:-634px;
+	top:15px;
 	right:-40px;
 	font-family:Bowlby One;
 	display:none;
@@ -139,4 +138,7 @@ label{
 #ldrboard img{
 	width:80%;
 	padding:10px auto; 
+}
+h6{
+	font-family: Comfortaa;
 }
