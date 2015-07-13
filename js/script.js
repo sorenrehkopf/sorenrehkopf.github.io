@@ -77,22 +77,13 @@ var setQ=function(){
 };
 var playerRank=function(){
 	if(playerScore<=7){
-		return("<h3 id='textDisplay'>'OMG! You're him! The hero this world has been needing! You're Neil deGrasse Tyson!'</h3><img class='endImg' src='https://pbs.twimg.com/profile_images/74188698/NeilTysonOriginsA-Crop_400x400.jpg'>");
+		return("<h3 id='textDisplay'>OMG! You're him! The hero this world has been needing! You're Neil deGrasse Tyson!</h3><img class='endImg' src='https://pbs.twimg.com/profile_images/74188698/NeilTysonOriginsA-Crop_400x400.jpg'>");
 	}else if(playerScore<=14){
-		return("<h3 id='textDisplay'>'No, you are not him. You are Neil Patrick Harris though!'</h3><img class='endImg' src='http://vignette1.wikia.nocookie.net/simpsons/images/c/c9/Neil_Patrick_Harris.png/revision/latest?cb=20111107195157'>");
+		return("<h3 id='textDisplay'>No, you are not him. You are Neil Patrick Harris though!</h3><img class='endImg' src='http://vignette1.wikia.nocookie.net/simpsons/images/c/c9/Neil_Patrick_Harris.png/revision/latest?cb=20111107195157'>");
 	}else if(playerScore<=25){
-		return("<h3 id='textDisplay'>'Sorry, but you're not even a Neil. You're Niall from 1D. Sucks to suck.'</h3><img class='endImg' src='http://datingtheweb.com/wp-content/uploads/2014/02/one-direction-of-niall-horan.jpg'>")
+		return("<h3 id='textDisplay'>Sorry, but you're not even a Neil. You're Niall from 1D. Sucks to suck.</h3><img class='endImg' src='http://datingtheweb.com/wp-content/uploads/2014/02/one-direction-of-niall-horan.jpg'>")
 	};
 };
-// var gameEnd=function(){
-// 	if(qNum=6){
-// 		dText.text(playerRank());
-// 		dSplay.delay(600).fadeIn(500)
-// 	}
-// };
-
-
-
 
 $('#startbtn').on('click',function(e){
 	e.preventDefault();
@@ -111,6 +102,7 @@ $('#startbtn').on('click',function(e){
 $('#board').on('click','#answers .btn',function(){
 		playerScore+=Number($(this).attr('sc'));
 		prgsPcnt+=14.29;
+		prgs();
 		if(qNum>5){
 		qText.fadeOut(500);
 		transOut($('#answers1'));
@@ -123,9 +115,12 @@ $('#board').on('click','#answers .btn',function(){
 		transOut($('#answers1'));
 		window.setTimeout(setQ,500);
 		transMessage();
-		prgs();
 		window.setTimeout(transIn,1000,1000);
 		qNum++;}
+});
+
+$('rtbtn').on('click', function(){
+
 });
 
 });

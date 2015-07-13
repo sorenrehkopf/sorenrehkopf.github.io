@@ -109,7 +109,10 @@ body{
 	display:none;
 	bottom:70px;
 	margin-left:18%;
-	dip
+	
+}
+#postbtns .btn{
+	width:30%;
 }
 label{
 	color:rgba(0, 0, 0, 1);
