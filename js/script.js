@@ -21,6 +21,7 @@ var qText=$('#question');
 var dText=$('#textDisplay')
 var dSplay=$('#dipdiv');
 var prgsPcnt=0;
+var fSplay = $('#findiv');
 var resps=["Hmmmm... interesting choice!","Neil?? Is that you??","Are you Neil?? Could you be him?","Your NDT count... It's off the charts!!","Hurry to the next question Neil!","The world cannot wait any longer. Please be NDT??","Space?? Science?? No, it's Neil deGrasse Tyson!","Oh, Mr. Tyson!!!","A telling reply...","Do you know what that means???"];
 
 
@@ -105,9 +106,8 @@ $('#board').on('click','#answers .btn',function(){
 		if(qNum>5){
 		qText.fadeOut(500);
 		transOut($('#answers1'));
-		dSplay.html(playerRank());
-		dSplay.css('margin-top','5%');	
-		dSplay.delay(600).fadeIn(500);
+		fSplay.html(playerRank());
+		fSplay.delay(600).fadeIn(500);
 		$('#postbtns').delay(600).fadeIn(500);
 		$('#ldrboard').fadeIn(2500);
 		}else{
@@ -128,9 +128,9 @@ $('#rptbtn').on('click', function(e){
 	qNum=0;
 	prgsPcnt=0;
 	prgs();
-	$('#postbtns').fadeOut(200);
-	dSplay.html('<h3 id="textDisplay"></h3>');
+	$('#postbtns').fadeOut(300);
 	setQ()
+	fSplay.fadeOut(300)
 	qText.fadeOut(0).delay(300);
 	$('#ldrboard').fadeOut(1500);
 	qText.fadeIn(300);

@@ -97,6 +97,10 @@
 	display:none;
 	margin-top:28%;
 }
+#findiv{
+	display:none;
+	margin-top:5%;
+}
 .endImg{
 	opacity:.8;
 	max-width:300px;

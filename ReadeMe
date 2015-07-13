@@ -1,0 +1,15 @@
+1st Project. The Game.
+
+Github pages link:
+sorenrehkopf.github.io
+Repository link:
+https://github.com/sorenrehkopf/sorenrehkopf.github.io
+
+Game description.
+I made a simple quiz game, to tell a user whether or not they are Neil deGrasse Tyson. Once the start button is hit, the game asks a series of 7 questions, each with an assigned score from one through 5, 1 being the best answer, and 5 being the worst. After 7 questions, the user is assigned a rank based on their final score, ranging from Neil deGrasse Tyson, to Niall from one direction. The user then has the oportunity to enter their name and save their rank and score, so that they may compete against other users to see who is the most like NDT. They also have the option to re-take the quiz if they were unhappy with their first result. 
+
+Methodologies:
+I used arrays to generate both the question and answer sets, as well as the responses in between the questions. This way the set of questions will change, and be randomly ordered. Once a question or reply is chosen, it is spliced out of the array, so that it cannot be chosen in the same round. When the re-set button is hit, the arrays are re-set so that they will not run out of material.
+
+Unsolved Glitches:
+I have also been unable to sort the leaderboard by score yet. I think I could figure out a way to do this fairly easily with more time. I was also attempting to incorporate a share to facebook button, but was unable to figure that part out either.
