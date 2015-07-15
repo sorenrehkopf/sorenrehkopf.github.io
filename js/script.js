@@ -57,7 +57,7 @@ var setQ=function(){
 	qAndA.splice(i,1)
 };
 var playerRank=function(){
-	if(playerScore<=6){
+	if(playerScore<=7){
 		return("<h3 id='textDisplay'>OMG! You're him! The hero this world has been needing! You're Neil deGrasse Tyson!</h3><img class='endImg' src='https://pbs.twimg.com/profile_images/74188698/NeilTysonOriginsA-Crop_400x400.jpg'>");
 	}else if(playerScore<=12){
 		return("<h3 id='textDisplay'>You're not quite NDT. You are Neil Armstrong though! The first man to set foot on the moon!</h3><img class='endImg' src='http://img2-1.timeinc.net/people/i/2012/news/120910/neil-armstong-2-300.jpg'>");
