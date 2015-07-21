@@ -91,11 +91,25 @@ $('#startbtn').on('click',function(e){
 	qText.text("Great! This simple quiz will help you find out!").delay(2200);
 	$('#startbtn').text('The world needs to know...').delay(1000);
 	$('#startbtn').fadeOut(2000);
+	if($(window).height() > 700){
 	$('#board').delay(2500).animate({top:'15px',height:'650px'},1500,function(){
 		setQ();
 		transIn(0);
 		$('.progress').fadeIn(1500);
 	});
+	}else if($(window).height() > 600){
+		$('#board').delay(2500).animate({top:'15px',height:'600px'},1500,function(){
+		setQ();
+		transIn(0);
+		$('.progress').fadeIn(1500);
+	});
+	}else{
+		$('#board').delay(2500).animate({top:'15px',height:'530px'},1500,function(){
+		setQ();
+		transIn(0);
+		$('.progress').fadeIn(1500);
+	});
+	};
 
 });
 

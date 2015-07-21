@@ -146,3 +146,60 @@ label{
 h6{
 	font-family: Comfortaa;
 }
+@media only screen and (max-width: 970px) {
+
+body{
+position: fixed;
+}
+#board{
+	top:100px;
+	text-align: center;
+	width:90%;
+	margin-left: 5%;
+	height:90%;
+	background-color: rgba(90, 90, 90, .55);
+	position: center;
+	border-radius: 10px 10px 10px 10px;
+/*	height:280px;*/
+	float:left;
+}
+#startbtn{
+	margin-top: 6%;
+	margin-bottom: 6%
+}
+h1{
+	font-size: 25px;
+}
+#answers .btn{
+	display:block;
+	margin-left:20%;
+	width:25% ;
+	margin-top: 8.25%;
+}
+.answers{
+	margin-top:8%;
+}
+.progress{
+	margin-left: 15%;
+}
+#postbtns{
+	position:relative;
+	bottom:-10px;
+}
+#ldrboard{
+	text-align: center;
+	background-color: rgba(90, 90, 90, .55);
+	position: relative;
+	border-radius: 10px 10px 10px 10px;
+	height:110%;
+	float:left;
+	color:rgba(10, 10, 10, .9);
+	top:15px;
+	right:-40px;
+	font-family:Bowlby One;
+	display:none;
+	max-height:650px;
+}
+#dipdiv{
+	margin-top:35%;
+}
