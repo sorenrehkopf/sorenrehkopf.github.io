@@ -138,7 +138,7 @@ label{
 	font-family:Bowlby One;
 	display:none;
 	max-height:650px;
-	overflow: scroll;
+	overflow: auto;
 }
 #ldrboard img{
 	width:80%;
@@ -203,7 +203,7 @@ h1{
 	display:none;
 	max-height:96vh;
 	width:75vw;
-	overflow: scroll;
+	overflow: auto;
 }
 #ldrboard img{
 	max-height:19vh;

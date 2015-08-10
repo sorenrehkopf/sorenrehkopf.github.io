@@ -106,7 +106,7 @@ $('#board').on('click','#answers .btn',function(){
 		playerScore+=Number($(this).attr('sc'));
 		prgsPcnt+=14.29;
 		prgs();
-		if(qNum>2){
+		if(qNum>5){
 		qText.fadeOut(500);
 		transOut($('#answers1'));
 		fSplay.html(playerRank());
