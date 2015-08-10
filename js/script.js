@@ -34,7 +34,11 @@ var transIn=function(del){
 	$('#answers1').delay(del).removeClass('slideOutLeft')
 	$('#answers1').delay(del).addClass('slideInRight');
 	$('#answers1').delay(del).fadeIn(1400);
+	if($(window).width() > 700){
 	$('#answers1').children().delay(del).animate({width:"60%"},500);
+	}else{
+		$('#answers1').children().delay(del).animate({width:"100%"},500);
+	}
 }
 var txtRfrsh=function(){
 	var x=Math.floor(Math.random()*(resps.length-1));
@@ -91,39 +95,26 @@ $('#startbtn').on('click',function(e){
 	qText.text("Great! This simple quiz will help you find out!").delay(2200);
 	$('#startbtn').text('The world needs to know...').delay(1000);
 	$('#startbtn').fadeOut(2000);
-	if($(window).height() > 700){
-	$('#board').delay(2500).animate({top:'15px',height:'650px'},1500,function(){
+	$('#board').delay(2500).animate({top:'2vh',height:'96vh'},1500,function(){
 		setQ();
 		transIn(0);
 		$('.progress').fadeIn(1500);
 	});
-	}else if($(window).height() > 600){
-		$('#board').delay(2500).animate({top:'15px',height:'600px'},1500,function(){
-		setQ();
-		transIn(0);
-		$('.progress').fadeIn(1500);
-	});
-	}else{
-		$('#board').delay(2500).animate({top:'15px',height:'530px'},1500,function(){
-		setQ();
-		transIn(0);
-		$('.progress').fadeIn(1500);
-	});
-	};
-
 });
 
 $('#board').on('click','#answers .btn',function(){
 		playerScore+=Number($(this).attr('sc'));
 		prgsPcnt+=14.29;
 		prgs();
-		if(qNum>5){
+		if(qNum>2){
 		qText.fadeOut(500);
 		transOut($('#answers1'));
 		fSplay.html(playerRank());
 		fSplay.delay(600).fadeIn(500);
 		$('#postbtns').delay(600).fadeIn(500);
+		if($(window).width() > 700){
 		$('#ldrboard').fadeIn(2500);
+			};
 		}else{
 		dText.text(txtRfrsh());
 		transOut($('#answers1'));
@@ -154,6 +145,10 @@ $('#rptbtn').on('click', function(e){
 $('#savebtn').on('click',function(){
 	var name=$('#name').val();
 	var pic=$('.endImg').attr('src');
+	if($(window).width() < 700){
+		$('#board').fadeOut(300);
+		$('#ldrboard').fadeIn(2000);
+			};
 	if(!clkys){
 	$('#ldrboard').append("<div pr="+playerScore+"><img src="+pic+"><h6>"+name+" - Score-"+playerScore+"</h6></div>");
 	// $('#ldrboard').children('div').attr('pr').isotope({ sortBy: [pr] });
