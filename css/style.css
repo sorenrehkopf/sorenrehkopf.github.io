@@ -3,28 +3,28 @@ body{
 }
 .yellow{
 	color:rgb(90,240,120);
-	font-size:15px;
+	font-size:17px;
 	text-decoration: none;
-	font-family: Varela Round;
+	font-family: Dosis;
 	text-shadow:7px 0px 5px;
 }
 .red{
 	color:rgb(250,170,170);
-	font-size:15px;
+	font-size:17px;
 	text-decoration: none;
-	font-family: Varela Round;
+	font-family: Dosis;
 }
 .blue{
 	color:rgb(170,170,250);
-	font-size:15px;
+	font-size:17px;
 	text-decoration: none;
-	font-family: Varela Round;
+	font-family: Dosis;
 }
 .green{
 	color:rgb(170,250,170);
-	font-size:15px;
+	font-size:17px;
 	text-decoration: none;
-	font-family: Varela Round;
+	font-family: Dosis;
 }
 #nav{
 	position:fixed;
@@ -57,11 +57,11 @@ body{
 	display:inline-block;
 }
 .title{
-	font-family: Noto Sans;
+	font-family: Coda;
 	color:white;
 }
 .subtitle{
-	font-family: Noto Sans;
+	font-family: Dosis;
 	color:white;
 }
 .headBtns{
@@ -102,6 +102,7 @@ body{
 }
 .aboutContent .subtitle{
 	text-indent: 3vw;
+	font-size:18px;
 }
 #projects{
 	height:92vh;
