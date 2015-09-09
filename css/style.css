@@ -1,9 +1,11 @@
 body{
-	background-color: rgb(90,90,90);
+	background-image: url(http://www.widewallpapers.net/mod/abstract-color-lines/1920x1200/color-lines-abstract-wide-wallpaper-1920x1200-001.jpg);
+	background-position: center right;
+	background-attachment: fixed;
 }
 .yellow{
 	color:rgb(90,240,120);
-	font-size:17px;
+	font-size:19px;
 	text-decoration: none;
 	font-family: Dosis;
 	text-shadow:7px 0px 5px;
@@ -37,7 +39,7 @@ body{
 	top:0px;
 	left:0px;
 	right:0px;
-	background-color: rgb(90, 90, 90);
+	background-color: rgba(90, 90, 90,.8);
 }
 .headContent{
 	margin-left:12vw;
@@ -76,13 +78,12 @@ body{
 	margin-right:10px;
 	background-color: rgba(50,50,50,1);
 	border:none;
-	border-radius:7px;
 }
 #about {
 	height:92vh;
 	left:0px;
 	right:0px;
-	background-color: rgb(140, 140, 140);
+	background-color: rgba(140, 140, 140,.8);
 }
 .aboutContent{
 	padding-top:10vh;
@@ -102,13 +103,13 @@ body{
 }
 .aboutContent .subtitle{
 	text-indent: 3vw;
-	font-size:18px;
+	font-size:18.5px;
 }
 #projects{
 	height:92vh;
 	left:0px;
 	right:0px;
-	background-color: rgb(90, 90, 90);
+	background-color: rgba(90, 90, 90,.8);
 }
 #projects h1{
 	margin-left: 7vw;
@@ -143,7 +144,7 @@ body{
 	height:92vh;
 	left:0px;
 	right:0px;
-	background-color: rgb(140, 140, 140);
+	background-color: rgba(140, 140, 140,.8);
 }
 .contactContent{
 	margin-left:12vw;
@@ -189,4 +190,9 @@ footer p{
 	vertical-align: bottom;
 	margin-bottom: 0px;
 	padding-bottom:0px;
+}
+iframe{
+	position:absolute;
+	display:none;
+	z-index: 
 }
