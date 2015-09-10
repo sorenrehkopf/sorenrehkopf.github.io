@@ -36,27 +36,37 @@ body{
 	left:90vw;
 }
 .header{
-	height:90vh;
+	text-align: center;
+	/*width:100vw;*/
+	height:92vh;
 	top:0px;
 	left:0px;
 	right:0px;
 	background-color: rgba(90, 90, 90,.8);
 }
 .headContent{
-	margin-left:12vw;
+	margin-left:0vw;
 	overflow:hidden;
-	float:left;
+
 }
-.headContent img{
-	width:25vw;
-	margin-top:6vh;
-	border-radius:50%;
-	overflow:hidden;
+
+#logo{
+	margin-top: 3vh;
+	border:10px solid white;
+	border-radius: 50%;
+	font-family: Dorsa;
+	font-size:300px;
+	color:white;
+	height:300px;
+	width:300px;
 }
+#logo div{
+	/*padding-top: 70px;*/
+	font-size: 100%;
+}
+
 .headPic{
 	text-align: center;
-	margin-left: 0px;
-	width:25vw;
 	display:inline-block;
 }
 .title{
@@ -68,15 +78,15 @@ body{
 	color:white;
 }
 .headBtns{
-	float:right;
-	display:inline-block;
-	margin-top:68vh;
-	margin-left: 3vw;
+	/*float:right;*/
+	/*display:inline-block;*/
+	/*margin-top:68vh;*/
+	/*margin-left: 3vw;*/
 }
 .headBtns button{
 	width:120px;
 	height:35px;
-	margin-right:10px;
+	margin-right:20px;
 	background-color: rgba(50,50,50,1);
 	border:none;
 }
@@ -87,24 +97,27 @@ body{
 	background-color: rgba(140, 140, 140,.8);
 }
 .aboutContent{
-	padding-top:10vh;
+	padding-top:8.5vh;
 	padding-left:12vw;
-	left:;
 	width:60vw;
 }
 .aboutContent img{
 	border-radius: 50%;
+	margin-bottom: 0vh;
 	width:10vw;
 	overflow:hidden;
 	display:inline;
 }
 .aboutContent .title{
 	display:inline;
+	margin-left: 3vw;
+	margin-bottom: 0vh;
 	vertical-align: middle;
 }
 .aboutContent .subtitle{
+	margin-top: .5vh;
 	text-indent: 3vw;
-	font-size:18.5px;
+	font-size:18px;
 }
 #projects{
 	height:92vh;
