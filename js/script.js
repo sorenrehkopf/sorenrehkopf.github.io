@@ -55,6 +55,7 @@ $(function(){
 		console.log('click')
 		$('body,html').css('overflow','hidden');	
 		$('#resClose').css('display','block');
+		$('#resDL').css('display','block');
 		$('#modalBlock').css('display','block');
 		$('#resShow').css('display','block');	
 	});	
@@ -62,7 +63,8 @@ $(function(){
 		e.preventDefault();
 		console.log('click')
 		$('body,html').css('overflow','auto');
-		$('#resClose').css('display','none');	
+		$('#resClose').css('display','none');
+		$('#resDL').css('display','none');	
 		$('#modalBlock').css('display','none');
 		$('#resShow').css('display','none');	
 	});	

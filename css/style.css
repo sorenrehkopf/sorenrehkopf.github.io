@@ -249,3 +249,12 @@ iframe::-webkit-scrollbar-thumb{
 	right:10vw;
 	top:5vh;
 }
+#resDL{
+	position:fixed;
+	display:none;
+	color:white;
+	font-size:30px;
+	z-index: 8;
+	right:10vw;
+	top:12vh;
+}
