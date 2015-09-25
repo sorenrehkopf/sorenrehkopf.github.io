@@ -36,8 +36,23 @@ body{
 	position:fixed;
 	/*display:none;*/
 	z-index:5;
-	top:30vh;
-	left:90vw;
+	top:24vh;
+	right:-300px;
+	text-align: center;
+}
+#navLogo{
+	margin-top: 3vh;
+	border:3px solid white;
+	border-radius: 50%;
+	font-family: Dorsa;
+	font-size:60px;
+	color:white;
+	height:60px;
+	width:60px;
+}
+#navLogo a{
+	text-decoration: none;
+	color:white;
 }
 .header{
 	text-align: center;

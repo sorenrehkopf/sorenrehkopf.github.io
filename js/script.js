@@ -1,6 +1,5 @@
 $(function(){
 
-	$('#nav').fadeOut(0);
 	
 	$('.about').on('click',function(e){
 		e.preventDefault();
@@ -17,7 +16,7 @@ $(function(){
 		$('body,html').animate({scrollTop:$('.header').height()+$('#about').height()+$('#contact').height()-20},300);
 	});
 
-	$('.top').on('click',function(e){
+	$('#navLogo').on('click',function(e){
 		e.preventDefault();
 		$('body,html').animate({scrollTop:0},400);
 	});
@@ -25,28 +24,28 @@ $(function(){
 	$(window).on('scroll',function(){
 		if($('body').scrollTop()>($('.header').height()+$('#about').height()+$('#projects').height()-200)||$('html').scrollTop()>($('.header').height()+$('#about').height()+$('#projects').height()-200)){
 			$('#nav').fadeIn(600);
-			$('.about').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.projects').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.contact').css({'text-shadow':'7px 0px 5px','font-size':'19px'});
-			$('.top').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
+			$('.about').css({'border-left':'none','font-size':'19px'});
+			$('.projects').css({'border-left':'none','font-size':'19px'});
+			$('.contact').css({'border-left':'1px solid white','font-size':'19px'});
 		}else if($('body').scrollTop()>($('.header').height()+$('#about').height()-200)||$('html').scrollTop()>($('.header').height()+$('#about').height()-200)){
 			$('#nav').fadeIn(600);
-			$('.about').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.projects').css({'text-shadow':'7px 0px 5px','font-size':'19px'});
-			$('.contact').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.top').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
+			$('.about').css({'border-left':'none','font-size':'19px'});
+			$('.projects').css({'border-left':'1px solid white','font-size':'19px'});
+			$('.contact').css({'border-left':'none','font-size':'19px'});
 		}else if($('body').scrollTop()>($('.header').height()-200)||$('html').scrollTop()>($('.header').height()-200)){
-			$('#nav').fadeIn(600);
-			$('.about').css({'text-shadow':'7px 0px 5px','font-size':'19px'});
-			$('.projects').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.contact').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.top').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
+			if($('#nav').css('right')=='-300px'){
+			$('#nav').animate({'right':'30px'},300);
+			};
+			$('.about').css({'border-left':'1px solid white','font-size':'19px'});
+			$('.projects').css({'border-left':'none','font-size':'19px'});
+			$('.contact').css({'border-left':'none','font-size':'19px'});
 		}else{
-			$('#nav').fadeOut();
-			$('.about').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.projects').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.contact').css({'text-shadow':'0px 0px 0px','font-size':'17px'});
-			$('.top').css({'text-shadow':'7px 0px 5px','font-size':'19px'});
+			if($('#nav').css('right')=='30px'){
+			$('#nav').animate({'right':'-300px'},300);
+			};
+			$('.about').css({'border-left':'none','font-size':'19px'});
+			$('.projects').css({'border-left':'none','font-size':'19px'});
+			$('.contact').css({'border-left':'none','font-size':'19px'});
 		}
 	});
 
