@@ -1,7 +1,4 @@
-/*html{
-	overflow:hidden;
-	height:100%;
-}*/
+
 body{
 	background-image: url(http://www.widewallpapers.net/mod/abstract-color-lines/1920x1200/color-lines-abstract-wide-wallpaper-1920x1200-001.jpg);
 	background-position: center right;
@@ -66,7 +63,6 @@ body{
 .headContent{
 	margin-left:0vw;
 	overflow:hidden;
-
 }
 
 #logo{
@@ -272,4 +268,47 @@ iframe::-webkit-scrollbar-thumb{
 	z-index: 8;
 	right:10vw;
 	top:12vh;
+}
+@media only screen and (max-width: 1000px) {
+
+body{
+	background-position: left;
+}
+.header{
+	height:100vh;
+}
+.headContent h1{
+	font-size: 5vh;
+}
+.headContent p{
+	font-size: 3vh;
+}
+#logo{
+	margin-top: 10vh;
+	border:10px solid white;
+	border-radius: 50%;
+	font-family: Dorsa;
+	font-size:92vw;
+	height:92vw;
+	width:92vw;
+}
+.headBtns button{
+	width:25vw;
+	height:5vh;
+	margin-right:20px;
+	background-color: rgba(50,50,50,1);
+	border:none;
+}
+.red{
+	font-size: 2.5vh;
+}
+.blue{
+	font-size: 2.5vh;
+}
+.green{
+	font-size: 2.5vh;
+}
+
+
+
 }
