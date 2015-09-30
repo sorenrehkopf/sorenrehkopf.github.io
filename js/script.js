@@ -53,28 +53,28 @@ $(function(){
 	$(window).on('scroll',function(){
 		if($('body').scrollTop()>($('.header').height()+$('#about').height()+$('#projects').height()-200)||$('html').scrollTop()>($('.header').height()+$('#about').height()+$('#projects').height()-200)){
 			$('#nav').fadeIn(600);
-			$('.about').css({'border-left':'none','font-size':'19px'});
-			$('.projects').css({'border-left':'none','font-size':'19px'});
-			$('.contact').css({'border-left':'1px solid white','font-size':'19px'});
+			$('#nav .about').css({'background-color':'rgba(150,150,150,0)'});
+			$('#nav .projects').css({'background-color':'rgba(150,150,150,0)'});
+			$('#nav .contact').css({'background-color':'rgba(20,20,20,.5)'});
 		}else if($('body').scrollTop()>($('.header').height()+$('#about').height()-200)||$('html').scrollTop()>($('.header').height()+$('#about').height()-200)){
 			$('#nav').fadeIn(600);
-			$('.about').css({'border-left':'none','font-size':'19px'});
-			$('.projects').css({'border-left':'1px solid white','font-size':'19px'});
-			$('.contact').css({'border-left':'none','font-size':'19px'});
+			$('#nav .about').css({'background-color':'rgba(150,150,150,0)'});
+			$('#nav .projects').css({'background-color':'rgba(20,20,20,.5)'});
+			$('#nav .contact').css({'background-color':'rgba(150,150,150,0)'});
 		}else if($('body').scrollTop()>($('.header').height()-200)||$('html').scrollTop()>($('.header').height()-200)){
 			if($('#nav').css('right')=='-300px' && $(window).width() > 1000){
 			$('#nav').animate({'right':'30px'},300);
 			};
-			$('.about').css({'border-left':'1px solid white','font-size':'19px'});
-			$('.projects').css({'border-left':'none','font-size':'19px'});
-			$('.contact').css({'border-left':'none','font-size':'19px'});
+			$('#nav .about').css({'background-color':'rgba(20,20,20,.5)'});
+			$('#nav .projects').css({'background-color':'rgba(150,150,150,0)'});
+			$('#nav .contact').css({'background-color':'rgba(150,150,150,0)'});
 		}else{
 			if($('#nav').css('right')=='30px' && $(window).width() > 1000){
 			$('#nav').animate({'right':'-300px'},300);
 			};
-			$('.about').css({'border-left':'none','font-size':'19px'});
-			$('.projects').css({'border-left':'none','font-size':'19px'});
-			$('.contact').css({'border-left':'none','font-size':'19px'});
+			$('#nav .about').css({'background-color':'rgba(150,150,150,0)'});
+			$('#nav .projects').css({'background-color':'rgba(150,150,150,0)'});
+			$('#nav .contact').css({'background-color':'rgba(150,150,150,0)'});
 		}
 	});
 
