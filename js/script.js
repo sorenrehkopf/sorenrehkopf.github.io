@@ -84,8 +84,8 @@ $(function(){
 		var scroll = $('.pCont').scrollLeft();
 		$(this).css('background-color','rgba(230,230,230,.6)');
 		scrollYes = setInterval(function(){
-			$('.pCont').animate({'scrollLeft':scroll-=100},300,'linear');	
-		},300);
+			$('.pCont').animate({'scrollLeft':scroll-=25},75,'linear');	
+		},75);
 	});
 	$('#lscroll').on('mouseout',function(){
 		$(this).css('background-color','rgba(200,200,200,.4)');
@@ -95,8 +95,8 @@ $(function(){
 		var scroll = $('.pCont').scrollLeft();
 		$(this).css('background-color','rgba(230,230,230,.6)');
 		scrollYes = setInterval(function(){
-			$('.pCont').animate({'scrollLeft':scroll+=100},300,'linear');	
-		},300);
+			$('.pCont').animate({'scrollLeft':scroll+=25},75,'linear');	
+		},75);
 	});
 	$('#rscroll').on('mouseout',function(){
 		$(this).css('background-color','rgba(200,200,200,.4)');
@@ -108,14 +108,30 @@ $(function(){
 		$('.pCont').animate({'scrollLeft':$('.pCont').width()},700);
 		$(this).animate({'background-color':'rgba(200,200,200,0)'},500);
 		$('#lscroll').animate({'background-color':'rgba(200,200,200,.4)'},500);
-	});
+		});
 
 	$('#lscroll').on('click',function(){
 		clearInterval(scrollYes);
 		$('.pCont').animate({'scrollLeft':0},700);
-		$(this).animate({'background-color':'rgba(200,200,200,0)'},500);
-		$('#rscroll').animate({'background-color':'rgba(200,200,200,.4)'},500);
-	});
+			$(this).animate({'background-color':'rgba(200,200,200,0)'},500);
+			$('#rscroll').animate({'background-color':'rgba(200,200,200,.4)'},500);
+		});
+
+	// $('.pCont').on('mouseover',function(e){
+	// 	if(e.pageX>$(this).width()-$(this).width()/2.5){
+	// 		var scroll = $(this).scrollLeft();
+	// 		scrollYes = setInterval(function(){
+	// 		$('.pCont').animate({'scrollLeft':scroll+=100},300,'linear');	
+	// 	},300);
+	// 	}else if(e.pageX<$(this).width()/3.5){
+	// 		var scroll = $(this).scrollLeft();
+	// 		scrollYes = setInterval(function(){
+	// 			$('.pCont').animate({'scrollLeft':scroll-=100},300,'linear');	
+	// 		},300);
+	// 	}else{
+	// 		clearInterval(scrollYes)
+	// 	}
+	// });
 
 	$('.resume').on('click','a',function(e){
 		e.preventDefault();
