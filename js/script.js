@@ -1,7 +1,6 @@
 $(function(){
 
 	$('.scroll').css({'height':$('.pScroll').height()/2,'margin-top':$('.pScroll').height()/6});
-	$('#logo').css({'margin-top':($(window).height()-330px)/2})
 
 	
 	$('.about').on('click',function(e){

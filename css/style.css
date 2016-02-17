@@ -63,8 +63,7 @@ body{
 }
 .header{
 	text-align: center;
-	/*width:100vw;*/
-	height:92vh;
+	height:95vh;
 	top:0px;
 	left:0px;
 	right:0px;
@@ -76,7 +75,7 @@ body{
 }
 
 #logo{
-	margin-top: 3vh;
+	margin-top:10vh;
 	border:10px solid white;
 	border-radius: 50%;
 	font-family: Dorsa;
@@ -86,7 +85,6 @@ body{
 	width:300px;
 }
 #logo div{
-	/*padding-top: 70px;*/
 	font-size: 100%;
 }
 
@@ -117,24 +115,66 @@ body{
 	background-color: rgba(140, 140, 140,.8);
 }
 .aboutContent{
-	padding-top:8.5vh;
-	padding-left:12vw;
-	width:60vw;
+	padding-top:5vh;
+	padding-left:8vw;
+	width:75vw;
 }
-.aboutContent img{
+#about_head{
+	width:25vw;
+}
+#about_head img{
 	border-radius: 50%;
-	margin-bottom: 0vh;
+	margin-bottom: 1vh;
 	width:10vw;
 	overflow:hidden;
 	display:inline;
 }
-.aboutContent .title{
+#about_head h1{
 	display:inline;
-	margin-left: 3vw;
-	margin-bottom: 0vh;
+	padding-top:3vh;
+	float:right;
+}
+.aboutContent h2{
+	display:inline;
+	margin-left: 2vw;
 	vertical-align: middle;
 }
-.aboutContent .subtitle{
+.aboutContent .right{
+	float:right;
+	margin-right: 9vw;
+	margin-top:-2vh;
+}
+#skills_list{
+	padding: 10px;
+	margin-top:0vh;
+	display:inline;
+	float:right;
+	width:17vw;
+	border:2px solid white;
+	border-radius:2px 10px 10px 2px;
+}
+#about_paragraph{
+	display:inline;
+	float:left;
+	width:50vw;
+	margin:1.5vh 2vw 0vh 0vh;
+	padding:0vh 0vw 1vh 1vw;
+}
+#skills_list ul{
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+#skills_list li{
+	list-style-type: none;
+}
+#skills_list h2{
+	margin:5px auto;
+}
+#skills_list h4{
+	margin: 5px auto;
+	text-decoration: underline;
+}
+.aboutContent p{
 	margin-top: .5vh;
 	text-indent: 3vw;
 	font-size:18px;
@@ -427,6 +467,17 @@ body{
 	margin-top:0vh;
 	width:30vw;
 	display:inline;
+}
+#skills_section{
+	float:none;
+}
+#skills_list{
+	display:none;
+}
+#about_paragraph{
+	float:none;
+	display:block;
+	width:80vw;
 }
 .aboutContent .title{
 	display:inline;
