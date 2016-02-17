@@ -470,6 +470,12 @@ body{
 .aboutContent span{
 	display:none;
 }
+#about_head{
+	width:100vh;
+}
+#about_head h1{
+	float:none;
+}
 #skills_section{
 	float:none;
 }
