@@ -467,7 +467,7 @@ body{
 	width:30vw;
 	display:inline;
 }
-.aboutContent h2{
+.aboutContent span{
 	display:none;
 }
 #skills_section{
