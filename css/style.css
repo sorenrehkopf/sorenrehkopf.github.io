@@ -456,7 +456,6 @@ body{
 	background-color: rgba(140, 140, 140,.8);
 }
 .aboutContent{
-	/*padding-top:8vh;*/
 	padding-bottom:10vw;
 	padding-left:10vw;
 	width:80vw;
@@ -467,6 +466,9 @@ body{
 	margin-top:0vh;
 	width:30vw;
 	display:inline;
+}
+.aboutContent h2{
+	display:none;
 }
 #skills_section{
 	float:none;
