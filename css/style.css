@@ -375,7 +375,7 @@ iframe::-webkit-scrollbar-thumb{
 @media only screen and (max-width: 1000px) {
 
 body{
-	background-position: left;
+	/*background-position: left;*/
 }
 #mobNavMenu{
 	position:fixed;
@@ -460,7 +460,7 @@ body{
 	padding-left:10vw;
 	width:80vw;
 }
-.aboutContent img{
+#about_head img{
 	border-radius: 50%;
 	margin-bottom: 0vh;
 	margin-top:0vh;
@@ -471,7 +471,7 @@ body{
 	display:none;
 }
 #about_head{
-	width:100vh;
+	width:85%;
 }
 #about_head h1{
 	float:none;
